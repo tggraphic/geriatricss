@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(10, 244, 244);
+}
+
+.navbar {
+  background-color: rgba(0, 3, 3, 0.7);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap; /* Allow navbar items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Reduced vertical padding */
+  height: auto; /* Allow navbar height to adjust based on content */
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 32px; /* Slightly reduced font size */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 5px 20px; /* Reduced vertical margin */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px; /* Reduced font size */
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Styling for the slide captions */
+.slide-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px; /* Slightly reduced padding */
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  max-width: 80%;
+}
+
+.slide-caption h2 {
+  font-size: 24px; /* Reduced font size */
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.slide-caption p {
+  font-size: 18px; /* Reduced font size */
+  margin-bottom: 20px; /* Reduced margin */
+}
+
+.slide-caption .explore-button {
+  display: inline-block;
+  padding: 8px 16px; /* Reduced padding */
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Define fade animation */
+@keyframes fade {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

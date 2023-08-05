@@ -1,0 +1,136 @@
+/* Add these styles to your existing CSS */
+
+.services {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    position: relative;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.services h2 {
+    color: #333;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.service {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service h3 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.service p {
+    color: #666;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.service:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Slideshow Styles */
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.slideshow-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1200px) {
+    .services-container {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        padding: 30px;
+    }
+
+    .service h3 {
+        font-size: 2rem;
+    }
+
+    .service p {
+        font-size: 1.6rem;
+    }
+}
+
+.logo {
+    margin-right: auto;
+    padding: 15px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(8, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: wavy;
+}
+
